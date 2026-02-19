@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Royal Spice Restaurant</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background:#0d0d0d;
+    color:white;
+}
+
+/* Glass Navbar */
+nav {
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    padding:15px;
+    text-align:center;
+    z-index:1000;
+}
+
+nav a {
+    color:white;
+    margin:0 20px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover {
+    color:#ff4d4d;
+}
+
+/* Hero Section */
+.hero {
+    background:url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') no-repeat center/cover;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1 {
+    font-size:55px;
+    animation:fadeIn 2s ease-in-out;
+}
+
+.hero p {
+    font-size:20px;
+    margin-bottom:20px;
+    animation:fadeIn 3s ease-in-out;
+}
+
+.btn {
+    background:#ff4d4d;
+    padding:12px 30px;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover {
+    background:white;
+    color:#ff4d4d;
+}
+
+/* Section Styling */
+section {
+    padding:100px 20px;
+    text-align:center;
+}
+
+.card-container {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card {
+    background:#1a1a1a;
+    margin:20px;
+    padding:25px;
+    width:260px;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.card:hover {
+    transform:translateY(-10px);
+    box-shadow:0 10px 30px rgba(255,77,77,0.4);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {opacity:0; transform:translateY(20px);}
+    to {opacity:1; transform:translateY(0);}
+}
+
+footer {
+    background:#000;
+    padding:30px;
+    text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#special">Special</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+<h1>Experience the Taste of Perfection</h1>
+<p>Luxury dining. Premium flavors. Unforgettable moments.</p>
+<a href="#special" class="btn">Explore Menu</a>
+</div>
+
+<section id="about">
+<h2>About Us</h2>
+<p>Royal Spice Restaurant offers a fine dining experience in Warangal.
+We serve authentic dishes crafted with passion and precision.</p>
+</section>
+
+<section id="special">
+<h2>Our Special Dishes</h2>
+
+<div class="card-container">
+<div class="card">
+<h3>🍛 Butter Chicken</h3>
+<p>Rich creamy curry served with naan.</p>
+</div>
+
+<div class="card">
+<h3>🍕 Veg Manchurian</h3>
+<p>Perfect blend of spices and flavors.</p>
+</div>
+
+<div class="card">
+<h3>🍰 Chocolate Brownie</h3>
+<p>Freshly baked dessert delight.</p>
+</div>
+</div>
+
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<p>📍 Warangal, Telangana</p>
+<p>📞 9XXXXXXXXX</p>
+<br>
+<a href="https://wa.me/919XXXXXXXXX" class="btn">Order on WhatsApp</a>
+</section>
+
+<footer>
+© 2026 Royal Spice Restaurant | Premium Dining
+</footer>
+
+</body>
+</html>
